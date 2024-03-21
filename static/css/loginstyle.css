@@ -2,3 +2,6 @@
     background: linear-gradient(100deg, #4617a6, #0f8de1c0); 
     height: 150vh; 
 }
+body {
+    overflow: hidden; /* غیرفعال کردن اسکرول */
+}

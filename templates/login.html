@@ -8,6 +8,33 @@
     <title>Login</title>
 </head>
 <body>
-    <div class="gradient-background"></div>
+    <div class="gradient-background d-flex justify-content-center align-items-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <div class="rounded bg-white text-dark p-4 d-flex">
+                        <div name="photo" class="align-items-start d-none d-md-flex "> <!-- مخفی در حالت کوچک (xs) -->
+                            <img src="../static/img/login-banner.jpg" alt="عکس" class="img-fluid">
+                        </div>
+                        <div name="forms">
+                            <div class="card-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="username">نام کاربری:</label>
+                                        <input type="text" class="form-control" id="username" placeholder="نام کاربری">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password">رمز عبور:</label>
+                                        <input type="password" class="form-control" id="password" placeholder="رمز عبور">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-block">ورود</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
