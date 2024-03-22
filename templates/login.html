@@ -8,20 +8,44 @@
     <title>Login</title>
 </head>
 
-<body>
- 
-    <div >
-        <form action="/login" method="post">
-            <h2>Login</h2>
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" required>
+<body class="bg-dark">
+    <div class="">
+        <div class="row">
+            <div class="texthome" ><button class="btn btn-link">  <a href="../index.html">Home</a> </button></div>
+            <div class="container vertical-center mt-3 p-4"> 
+              <div class="rounded  col-10 d-flex justify-content-center mx-auto" style="background-color: rgb(255, 255, 255);">
+                    <div id="photo" class="col-8 d-none d-xl-block d-none d-md-block">
+                        <img class="rounded " style="max-width: 80%; height: auto;" src="../static/img/login-banner.jpg" alt="">
+                    </div>
+                    <div id="form" class="col-4  card-body p-4 mt-5 ">
+                      
+                        
+                            <h3 class="text-center mb-4">Login</h3>
+                            <hr>
+                            <form action="/login" method="post">
+                                <div class="form-floating mb-3">
+                                    <input type="Username" class="form-control" id="floatingInput" placeholder="enter Username">
+                                    <label for="floatingInput">Username</label>
+                                  </div>
+                                  <div class="form-floating mb-3">
+                                    <input type="phoneNumber" class="form-control" id="floatingInput" placeholder="enter phoneNumber">
+                                    <label for="floatingInput">PhoneNumber</label>
+                                  </div>
+                                  <div class="form-floating">
+                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                    <label for="floatingPassword">Password</label>
+                                  </div>
+                                  <button type="button" class="btn btn-secondary btn-lg btn-block col-12 mt-3 p-2">Primary</button>
+                            </form>
+                        
+                    
+                        
+                    </div>
+              </div>
+            </div>
+            
+    </div>
     
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
-    
-            <input type="submit" value="Login">
-        </form>
-     </div>
      
  
 </body>
